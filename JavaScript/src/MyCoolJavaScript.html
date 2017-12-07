@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>My First JavaScript</h2>
+
+<!-- programming language that allows you to implement complex things on web pages —
+ every time a web page does more than just sit there and display static information for you to look at
+— displaying timely content updates, or interactive maps, or animated 2D/3D graphics -->
+<button type="button"
+        onclick="document.getElementById('demo').innerHTML = Date()">
+    Click me to display Date and Time.</button>
+
+<p id="demo"></p>
+
+<p>x = 5, y = 2, calculate z = x + y, and display z:</p>
+
+<p id="demo2"></p>
+
+<script>
+    var x = 5;
+    var y = 2;
+    var z = x + y;
+    document.getElementById("demo2").innerHTML = z;
+</script>
+
+<h2>JavaScript Arrays</h2>
+
+<p id="demo3"></p>
+
+<script>
+    var cars = [
+        "Saab",
+        "Volvo",
+        "BMW"
+    ];
+    document.getElementById("demo3").innerHTML = cars;
+</script>
+
+</body>
+</html>

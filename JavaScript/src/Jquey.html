@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- jquery The purpose of jQuery is to make it much easier to use JavaScript on your website. its JS LIBERY -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("p").hide();
+            });
+        });
+
+        $(document).ready(function(){
+            $("#p1").mouseenter(function(){
+                alert("You entered p1!");
+            });
+        });
+
+        $(document).ready(function(){
+            $("p").on({
+                mouseenter: function(){
+                    $(this).css("background-color", "lightgray");
+                },
+                mouseleave: function(){
+                    $(this).css("background-color", "lightblue");
+                },
+                click: function(){
+                    $(this).css("background-color", "yellow");
+                }
+            });
+        });
+
+    </script>
+</head>
+<body>
+
+<h2>This is a heading</h2>
+
+<p id="p1">Enter this paragraph.</p>
+
+<p>This is a paragraph.</p>
+<p>This is another paragraph.</p>
+<p>Click or move the mouse pointer over this paragraph.</p>
+
+
+<button>Click me</button>
+
+</body>
+</html>
